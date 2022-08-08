@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Create Budget</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="home-btn" href="home.html">Account Home</a>
+            <a class="blank" href=""></a>
+            <a class="logout-btn" href="index.html">Log Out</a>
+        </nav>
+    </header>
+    <main>
+        <h1>New Budget</h1>
+        <h2>Income</h2>
+        <div class="add-income-container">
+            <a class="plus-btn" href="">+</a>
+            <input class="source-title" type="text" placeholder="Source of Income">
+            <input class="value" type="number" data-type="currency" step="0.01" placeholder="0.00">
+            <select name="rate" class="income-rate">
+                <option value="Monthly">Monthly</option>
+                <option value="Bi-monthly">Bi-monthly</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Bi-weekly">Bi-weekly</option>
+                <option value="Annual">Annual</option>
+            </select>
+        </div>
+        <table class="income-table">
+            <tr>
+                <td class="cell-title">Employment</td><td class="income-primary">$4000.00 / Monthly</td>
+            </tr>
+        </table>
+        <h2>Expenses</h2>
+        <div class="add-expenses-container">
+            <a class="plus-btn" href="">+</a>
+            <input class="source-title" type="text" placeholder="Expense Name">
+            <input class="value" type="number" data-type="currency" step="0.01" placeholder="0.00">
+            <select name="rate" class="income-rate">
+                <option value="Monthly">1 - Required</option>
+                <option value="Bi-monthly">2 - High</option>
+                <option value="Weekly">3 - Medium</option>
+                <option value="Bi-weekly">4 - Low</option>
+                <option value="Annual">5 - Luxury</option>
+            </select>
+        </div>
+        <table class="expense-table">
+            <tr>
+                <td class="cell-title">Mortgage</td><td class="expense-primary">$1,400.00</td><td class="cell-title priority">1</td>
+            </tr>
+            <tr>
+                <td class="cell-title">Car Payment</td><td class="expense-secondary">$380.00</td><td class="cell-title priority">1</td>
+            </tr>
+            <tr>
+                <td class="cell-title">Electric Bill</td><td class="expense-primary">$127.00</td><td class="cell-title priority">1</td>
+            </tr>
+            <tr>
+                <td class="cell-title">Entertainment</td><td class="expense-secondary">$200.00</td><td class="cell-title priority">3</td>
+            </tr>
+            <tr>
+                <td class="cell-title">Savings</td><td class="expense-primary">$100.00</td><td class="cell-title priority">5</td>
+            </tr>
+        </table>
+        <div class="btn-container">
+            <a href="">Save Budget</a>
+            <a href="budgetHome.html">Budget Home</a>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

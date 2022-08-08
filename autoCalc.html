@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Auto Finance Calculator</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="home-btn" href="home.html">Account Home</a>
+            <a class="blank" href=""></a>
+            <a class="logout-btn" href="index.html">Log Out</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Auto Financing Calculator</h1>
+        <h4>Optional fields use national average if no value is provided.</h4>
+        <form class="auto-form">
+            <input class="car-price" type="text" placeholder="Car Price">
+            <select name="term"  class="stretch-apr">
+                <option value="30">72 Months</option>
+                <option value="30">60 Months</option>
+                <option value="30">48 Months</option>
+                <option value="30">36 Months</option>
+                <option value="30">24 Months</option>
+                <option value="30">12 Months</option>
+            </select>
+            <div class="apr-container">
+                <input class="stretch" type="number" step="0.01" placeholder="APR">
+            </div>
+            <div class="insurance-container">
+                <input class="stretch" type="number" step="0.01" placeholder="Insurance Cost (Optional)">
+            </div>
+            <div class="trade-container">
+                <input class="stretch" type="number" step="0.01" placeholder="Trade-in Value (Optional)">
+            </div>
+            <div class="down-payment-container">
+                <input class="stretch" type="number" step="0.01" placeholder="Down Payment">
+            </div>
+        </form>
+        <div class="btn-container cal-btn">
+            <a href="">Calculate</a>
+        </div>
+        <table class="auto-summary">
+            <tr>
+                <td class="cell-title">Est. Monthly Payment</td><td class="cell-title">$400.00</td>
+            </tr>
+            <tr>
+                <td class="cell-title">Trade-in Monthly Payment</td><td class="cell-title">$380.00</td>
+            </tr>
+            <tr>
+                <td class="cell-title">Difference</td><td class="cell-title">$20.00</td>
+            </tr>
+            <tr>
+                <td class="cell-title">New Surplus / Deficit</td><td class="income-primary">$780.00</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

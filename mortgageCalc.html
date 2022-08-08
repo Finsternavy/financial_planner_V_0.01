@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Mortgage Calculator</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="home-btn" href="home.html">Account Home</a>
+            <a class="blank" href=""></a>
+            <a class="logout-btn" href="index.html">Log Out</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Mortgage Calculator</h1>
+        <h4>Optional fields use national average if no value is provided.</h4>
+        <form class="mortgage-form">
+            <div class="price-container">
+                <input class="stretch" type="number" placeholder="Home Price" step="0.01">
+            </div>
+            <select name="term"  class="stretch-apr">
+                <option value="30">30 Year</option>
+                <option value="30">15 Year</option>
+            </select>
+            <div class="apr-container">
+                <input class="stretch" type="number" step="0.01" placeholder="APR">
+            </div>
+            
+            <div class="tax-container">
+                <input class="stretch" type="number" step="0.01" placeholder="Property Tax (Optional)">
+            </div>
+            <div class="insurance-container">
+                <input class="stretch" type="number" step="0.01" placeholder="Insurance Cost (Optional)">
+            </div>
+            <div class="mortgage-insurance-container">
+                <input class="stretch" type="number" step="0.01" placeholder="Mortgage Insurance (Optional)">
+            </div>
+            <div class="down-payment-container">
+                <input class="stretch" type="number" step="0.01" placeholder="Down Payment">
+            </div>
+            <p class="va-label">VA Loan?</p>
+            <select name="va-loan"  class="stretch-va">
+                <option value="NO">NO</option>
+                <option value="YES">YES</option>
+            </select>
+        </form>
+        <div class="btn-container calc-btn">
+            <a href="">Calculate</a>
+        </div>
+        <table class="mortgage-table">
+            <tr>
+                <td class="cell-title">Estimated Mortgage</td><td class="cell-title">$1,700.00</td>
+            </tr>
+            <tr>
+                <td class="cell-title">Current Mortgage / Rent</td><td class="cell-title">$1,200.00</td>
+            </tr>
+            <tr>
+                <td class="cell-title">Difference</td><td class="cell-title">$500.00</td>
+            </tr>
+            <tr>
+                <td class="cell-title">New Surplus / Deficit</td><td class="income-primary">$800.00</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
