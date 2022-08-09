@@ -3,6 +3,7 @@
 # This is a comment
 # Ignore this folder
 folder/
+.vscode/
 # Ignore this file
 .setting
 # Ignore ide stuff
